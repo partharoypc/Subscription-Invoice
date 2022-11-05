@@ -9,12 +9,14 @@
 
     <style>
         .main-container {
+            font-family: sans-serif;
+            color: white;
             display: block;
             margin: 0 auto;
             max-width: 400px;
-            background: gray;
+            height: auto;
+            background: #212226;
             padding: 12px;
-            padding-bottom: 50px;
         }
         
         h1 {
@@ -30,22 +32,64 @@
         }
         
         .value {
-            color: aliceblue;
+            color: #85868A;
         }
         
         .plan {
-            padding-bottom: 10px;
+            color: #C2C3C7;
+            font-size: 14px;
             text-align: center;
             line-height: .8;
-            border-radius: 5px;
-            padding: 5px;
-            background: rgba(143, 33, 33, 0.812);
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background: #2D2E32;
+        }
+        
+        @media only screen and (max-width: 300px) {
+            .plan {
+                font-size: smaller;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            .c-plan {
+                font-size: 20px;
+            }
+            .plan-price {
+                font-size: 19px;
+            }
+            ul {
+                font-size: 14px;
+            }
+        }
+        
+        .c-plan {
+            font-size: 23px;
+        }
+        
+        .plan-price {
+            font-size: 18px;
+        }
+        
+        ul {
+            font-size: 16px;
+            list-style: none;
+            padding-left: 0px;
         }
         
         .sub-plan {
             padding: 8px;
             border-radius: 10px;
-            border: solid 2px gainsboro;
+            border: solid 2px #85868A;
+        }
+        
+        .footer {
+            font-size: 14px;
+            text-align: center;
+            padding-top: 10px;
+            bottom: 0;
         }
     </style>
 </head>
@@ -69,23 +113,25 @@
         </div>
         <div>
             <center>
-                <h1>3 Years</h1>
-                <span class="plan">Premium Member since jan 5 2020</span><br><br>
-                <span class="plan">Plan Expiry Date jan 5 2023</span><br><br>
+                <h2>3 Years</h2>
+                <span class="plan">Premium Member since jan 5, 2020</span><br><br>
+                <span class="plan">Plan Expiry Date jan 5, 2023</span><br><br>
             </center>
         </div>
 
         <div class="sub-plan">
-            <h2>Current Plan</h2>
+            <p class="c-plan">Current Plan</p>
             <ul>
-                <li>1 Simultaneous Streams</li>
-                <li>1 Simultaneous Streams</li>
-                <li>1 Simultaneous Streams</li>
-                <li>1 Simultaneous Streams</li>
+                <li>&#10004; Simultaneous Streams</li>
+                <li>&#10004; Device</li>
+                <li>&#10004; Unlimited Device</li>
+                <li>&#10004; No Ads</li>
             </ul>
-            <h2>999/YEAR</h2>
+            <p class="plan-price">₹ 999/YEAR</p>
 
         </div>
+
+        <p class="footer">@Lottery Master Pro</p>
 
 
     </div>
